@@ -14,7 +14,7 @@ namespace TestDocker2.Controllers
 
         public async Task<ActionResult> GetData()
         {
-            return Ok();
+            return Ok("Aqui tenemos info");
         }
     }
 }
