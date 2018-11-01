@@ -5,7 +5,7 @@ EXPOSE 44317
 
 FROM microsoft/dotnet:2.1-sdk AS build
 WORKDIR /src
-COPY ["NewProject/NewProject.csproj", "NewProject/"]
+COPY . NewProject/
 RUN dotnet restore "NewProject/NewProject.csproj"
 COPY . .
 WORKDIR "/src/NewProject"
